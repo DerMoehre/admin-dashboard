@@ -207,12 +207,14 @@ button {
 .side_bar {
     width: 30%;
     height: 100%;
-    margin: 0px 20px 40px 40px;
+    /* padding-left: 40px; */
+    /* margin: 0px 20px 40px 40px; */
 }
 
 .announcements_container{
     background-color: var(--color-light-green);
     border-radius: 16px;
+    margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
     box-shadow: 0px 10px 13px -7px #000000, 12px 7px 15px -4px rgba(0,0,0,0.57);
@@ -225,6 +227,7 @@ button {
 .trending_container {
     background-color: var(--color-light-green);
     border-radius: 16px;
+    margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
     padding: 20px;
