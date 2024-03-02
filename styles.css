@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Inter';
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     --color-background-light: #c1c6dd;
     --color-green: #4bc190;
     --color-light-green: #deeec6;
-    --color-light-gray: #e8e7e7;
+    --color-light-gray: #9296B0;
 }
 
 p {
@@ -19,6 +20,20 @@ p {
 hr {
     color: var(--color-background);
     margin: 20px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.main_title {
+    font-size: 32px;
 }
 
 .main_container {
@@ -37,6 +52,10 @@ hr {
     background-color: var(--color-light-gray);
 }
 
+.nav_items, .nav_settings {
+    padding-left: 5px;
+}
+
 .nav_item {
     display: flex;
     align-items: center;
@@ -46,6 +65,8 @@ hr {
 
 .nav_item:hover {
     background-color: var(--color-green);
+    border-radius: 8px;
+    padding: 5px;
 }
 
 .nav_icon {
@@ -120,6 +141,7 @@ button {
     width: 65px;
     border-radius: 16px;
     cursor: pointer;
+    box-shadow: 0px 10px 13px -7px #000000, 12px 7px 15px -4px rgba(0,0,0,0.57);
 }
 
 .welcome_user {
@@ -160,33 +182,61 @@ button {
     display: grid;
     width: 100%;
     gap: 32px;
-    padding: 20px 40px;
+    padding: 20px 0px 40px 40px;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(350px, 0.5fr));
 }
 
 .grid_item {
+    display: flex;
+    flex-direction: column;
     padding: 30px 20px;
     height: 200px;
+    justify-content: space-between;
     border-radius: 16px;
     border-left: 12px solid var(--color-green);
     background-color: var(--color-light-green);
+    box-shadow: 0px 10px 13px -7px #000000, 12px 7px 15px -4px rgba(0,0,0,0.57);
+}
+
+.items {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .side_bar {
     width: 30%;
     height: 100%;
-
+    margin: 0px 20px 40px 40px;
 }
 
-.announcements_container {
+.announcements_container{
     background-color: var(--color-light-green);
     border-radius: 16px;
     margin-right: 40px;
     margin-top: 20px;
+    box-shadow: 0px 10px 13px -7px #000000, 12px 7px 15px -4px rgba(0,0,0,0.57);
 }
 
 .announcements {
     padding: 20px 20px;
 }
 
+.trending_container {
+    background-color: var(--color-light-green);
+    border-radius: 16px;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 10px 13px -7px #000000, 12px 7px 15px -4px rgba(0,0,0,0.57);
+}
+
+.trending {
+    padding: 10px 0px;
+}
+
+.trending {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
